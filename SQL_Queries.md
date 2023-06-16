@@ -1,6 +1,6 @@
 ### Source
 
-The dataset that these queries pulled from is the London Crime dataset made publically available by https://data.london.gov.uk/ and hosted by the Google BigQuery platform.
+The dataset that these queries pulled from is the London Crime dataset made publicly available by https://data.london.gov.uk/ and hosted by the Google BigQuery platform.
 
 ### Query 1
 
