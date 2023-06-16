@@ -1,5 +1,14 @@
 # London-Crime-Visualization
-In this project I take a look at crime data in London from 2009 to 2016 and visualize some key aspects of four major crime categories in the city: Burglary, Criminal Damage, Drugs, and Violence Against the Person.
+
+In this project I take a look at crime data in London to visualize some key aspects of four major crime categories in the city: 
++ Burglary
++ Criminal Damage
++ Drugs
++ Violence Against the Person
+
+Across two unique time periods:
++ 2009 to 2012
++ 2013 to 2016
 
 ## Tools Used
 + Google's **BigQuery**, to pull the necessary publically-available data for my needs.
