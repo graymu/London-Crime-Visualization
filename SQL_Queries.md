@@ -1,11 +1,12 @@
-Note: The dataset that these queries pulled from is the London Crime dataset made publically available by https://data.london.gov.uk/ and hosted by the Google BigQuery platform.
+### Source
 
+The dataset that these queries pulled from is the London Crime dataset made publically available by https://data.london.gov.uk/ and hosted by the Google BigQuery platform.
 
 ### Query 1
 
 This first Query will select the total number of crimes across the 4 categories for Time Period #1 (2009-2012).
 
-```
+```sql
 SELECT 
   major_category,
   SUM(value) AS total_crimes
@@ -25,7 +26,7 @@ GROUP BY
 
 And this second Query will grab the same information for Time Period #2 (2013-2016).
 
-```
+```sql
 SELECT 
   major_category,
   SUM(value) AS total_crimes
@@ -45,11 +46,13 @@ These two pieces of information can be used to visualize the difference in these
 
 Next, I investigate how these crime types are broken down by month in the two time periods.
 
+---
+
 ### Query 3
 
 This third query breaks down crime by month for Time Period #1 (2009-2012).
 
-```
+```sql
 SELECT 
   major_category,
   month,
@@ -73,7 +76,7 @@ ORDER BY
 
 This fourth query grabs the same information for Time Period #2 (2013-2016).
 
-```
+```sql
 SELECT 
   major_category,
   month,
@@ -95,11 +98,13 @@ ORDER BY
 
 Now for the last two Queries I want to know how the crime totals for these categories change across the boroughs of London.
 
+---
+
 ### Query 5
 
 This fifth query displays crime totals by category and borough for Time Period #1 (2009-2012).
 
-```
+```sql
 SELECT 
   major_category,
   borough,
@@ -123,7 +128,7 @@ ORDER BY
 
 This sixth query grabs the same information for Time Period #2 (2013-2016).
 
-```
+```sql
 SELECT 
   major_category,
   borough,
@@ -142,5 +147,7 @@ GROUP BY
 ORDER BY
   borough
 ```
+
+---
 
 The results of these 6 Queries are saved in their own CSV files that I will use to create visualizations.
